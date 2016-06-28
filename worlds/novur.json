@@ -3,13 +3,13 @@
    "@configType" : "WORLD",
    "@name" : "Novur",
    "@position" : [ 7932, 8160 ],
-   "@scroll" : [ 8008.66455078125, 8413.6708984375, 0.37500017881393433 ],
+   "@scroll" : [ 10566.1875, 6436.798828125, -9.3132257461547852e-08 ],
    "@unlinked" : [],
    "@version" : 6,
    "generator" : {
       "@collapsed" : false,
       "@name" : "Generator",
-      "@position" : [ 8436, 8207 ],
+      "@position" : [ 8593, 8198 ],
       "@toggle-distribution" : true,
       "@toggle-global" : true,
       "@toggle-visualise" : true,
@@ -18,16 +18,16 @@
       "biomes" : [
          {
             "@collapsed" : false,
-            "@name" : "World",
-            "@position" : [ 8940, 8347 ],
-            "altitude" : 0.5,
+            "@name" : "Common",
+            "@position" : [ 9254, 8179 ],
+            "altitude" : 0,
             "humidity" : 0.5,
             "part" : {
                "@collapsed" : false,
                "@name" : "World Biome Distribution",
-               "@position" : [ 9444, 7939 ],
+               "@position" : [ 9810, 7669 ],
                "@selector-open" : false,
-               "@toggle-caves" : false,
+               "@toggle-caves" : true,
                "@toggle-ccaves" : true,
                "@toggle-csurface" : true,
                "@toggle-cthreed" : true,
@@ -36,19 +36,106 @@
                "@toggle-heightmap" : true,
                "@toggle-selector" : true,
                "@toggle-stage" : true,
-               "@toggle-threed" : false,
+               "@toggle-threed" : true,
                "@toggle-visualise" : true,
                "@x-name" : "x",
                "@y-name" : "y",
                "caveSurfaceShrink" : {
-                  "enabled" : false,
-                  "value" : 0.0099999997764825821
+                  "enabled" : true,
+                  "value" : 1
                },
                "caveThresholdBias" : {
-                  "enabled" : false,
+                  "enabled" : true,
                   "value" : 0
                },
-               "caves" : null,
+               "caves" : {
+                  "@collapsed" : false,
+                  "@name" : "Remap 3D",
+                  "@position" : [ 10366, 6313 ],
+                  "clamp" : false,
+                  "clampPower" : 2.8199999332427979,
+                  "frequency" : [ 1, 1, 1 ],
+                  "fun" : {
+                     "@collapsed" : false,
+                     "@name" : "Sum 3D",
+                     "@position" : [ 10681, 6256 ],
+                     "frequency" : [ 1, 1, 1 ],
+                     "terms" : [
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Absolute 3D",
+                              "@position" : [ 10996, 6137 ],
+                              "frequency" : [ 1, 1, 1 ],
+                              "fun" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Interpolate 3D",
+                                 "@position" : [ 11281, 6126 ],
+                                 "frequency" : [ 1, 1, 1 ],
+                                 "fun" : {
+                                    "@collapsed" : false,
+                                    "@name" : "Perlin 3D",
+                                    "@position" : [ 11564, 6135 ],
+                                    "frequency" : [ 0.44400003552436829, 1.2410000562667847, 0.44400003552436829 ],
+                                    "offset" : [ -351.90390014648438, 339.0689697265625, -15.8499755859375 ],
+                                    "offset-hash" : "FO68eEz8LF8v9UtF",
+                                    "type" : "perlin"
+                                 },
+                                 "scale" : 0.19999998807907104,
+                                 "type" : "interpolated"
+                              },
+                              "type" : "absolute"
+                           },
+                           "multiplier" : 1,
+                           "power" : 1
+                        },
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Fractal 3D",
+                              "@position" : [ 10996, 6272 ],
+                              "frequency" : [ 1, 1, 1 ],
+                              "fun" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Simplex 3D",
+                                 "@position" : [ 11279, 6418 ],
+                                 "frequency" : [ 1, 1, 1 ],
+                                 "offset" : [ 677.55596923828125, -318.274658203125, -335.1474609375 ],
+                                 "offset-hash" : "yd6rTKVmA7STXHEo",
+                                 "type" : "simplex"
+                              },
+                              "octaves" : [
+                                 {
+                                    "multiplier" : 0.20000000298023224,
+                                    "offset" : [ -396.484375, -286.79193115234375, -164.76510620117188 ],
+                                    "offset-hash" : "PyAosZqk4wDzi9R7",
+                                    "scale" : 2
+                                 },
+                                 {
+                                    "multiplier" : 0.30000001192092896,
+                                    "offset" : [ 109.08990478515625, -109.11965942382812, -122.27165985107422 ],
+                                    "offset-hash" : "mXVVst2FlxKuxCM3",
+                                    "scale" : 4
+                                 },
+                                 {
+                                    "multiplier" : 0.5,
+                                    "offset" : [ 897.11480712890625, 307.43557739257812, -345.09161376953125 ],
+                                    "offset-hash" : "lTQ3yRUJVknUCSrv",
+                                    "scale" : 1
+                                 }
+                              ],
+                              "type" : "fractal"
+                           },
+                           "multiplier" : 0.20000000298023224,
+                           "power" : 1
+                        }
+                     ],
+                     "type" : "sum"
+                  },
+                  "max" : 1,
+                  "min" : -1.25,
+                  "type" : "remap"
+               },
                "caves_decorations" : null,
                "caves_substrate" : null,
                "distortion" : null,
@@ -91,7 +178,7 @@
                      "part" : {
                         "@collapsed" : false,
                         "@name" : "Charred Plains",
-                        "@position" : [ 9948, 7523 ],
+                        "@position" : [ 10366, 7774 ],
                         "@selector-open" : false,
                         "@toggle-caves" : false,
                         "@toggle-ccaves" : true,
@@ -138,21 +225,21 @@
                         "heightmap" : {
                            "@collapsed" : false,
                            "@name" : "Sum 2D",
-                           "@position" : [ 10301, 7707 ],
+                           "@position" : [ 10719, 7958 ],
                            "frequency" : [ 1, 1 ],
                            "terms" : [
                               {
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Remap 2D",
-                                    "@position" : [ 10623, 7565 ],
+                                    "@position" : [ 11041, 7816 ],
                                     "clamp" : false,
                                     "clampPower" : 0.5,
                                     "frequency" : [ 1, 1 ],
                                     "fun" : {
                                        "@collapsed" : false,
                                        "@name" : "Gabor 2D",
-                                       "@position" : [ 10917, 7514 ],
+                                       "@position" : [ 11335, 7765 ],
                                        "cellCount" : 1,
                                        "components" : [
                                           {
@@ -162,7 +249,7 @@
                                              "w" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Worley 2D",
-                                                "@position" : [ 11211, 7511 ],
+                                                "@position" : [ 11629, 7762 ],
                                                 "cellCount" : 4,
                                                 "cellScale" : 2.5,
                                                 "components" : [
@@ -195,12 +282,12 @@
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Fractal 2D",
-                                    "@position" : [ 10623, 7789 ],
+                                    "@position" : [ 11041, 8040 ],
                                     "frequency" : [ 1.4900001287460327, 1.4900001287460327 ],
                                     "fun" : {
                                        "@collapsed" : false,
                                        "@name" : "Perlin 2D",
-                                       "@position" : [ 10905, 7935 ],
+                                       "@position" : [ 11323, 8186 ],
                                        "frequency" : [ 1, 1 ],
                                        "offset" : [ -22.076753616333008, 376.68817138671875 ],
                                        "offset-hash" : "6oMlCOhDrdo1vANo",
@@ -249,7 +336,7 @@
                         "surface_substrate" : {
                            "@collapsed" : false,
                            "@name" : "Standard Substrate",
-                           "@position" : [ 10301, 8186 ],
+                           "@position" : [ 10719, 8437 ],
                            "strates" : [
                               {
                                  "averageDepth" : 3,
@@ -296,7 +383,7 @@
                         },
                         "threeD" : null,
                         "threeDMaxY" : {
-                           "enabled" : true,
+                           "enabled" : false,
                            "value" : 256
                         },
                         "threeDMinY" : {
@@ -304,16 +391,16 @@
                            "value" : 0
                         },
                         "threeDSurfaceMaxY" : {
-                           "enabled" : true,
-                           "value" : 72
+                           "enabled" : false,
+                           "value" : 57.5
                         },
                         "threeDSurfaceMinY" : {
-                           "enabled" : true,
-                           "value" : -64
+                           "enabled" : false,
+                           "value" : -1
                         },
                         "threeDThresholdBias" : {
-                           "enabled" : true,
-                           "value" : 0.029999999329447746
+                           "enabled" : false,
+                           "value" : 1
                         },
                         "threed_decorations" : null,
                         "threed_substrate" : null,
@@ -333,7 +420,7 @@
                      "part" : {
                         "@collapsed" : false,
                         "@name" : "Devil's Spines",
-                        "@position" : [ 9948, 9016 ],
+                        "@position" : [ 10366, 9267 ],
                         "@selector-open" : false,
                         "@toggle-caves" : false,
                         "@toggle-ccaves" : true,
@@ -362,11 +449,11 @@
                         "distortion" : {
                            "@collapsed" : false,
                            "@name" : "Distort 3D",
-                           "@position" : [ 10327, 9577 ],
+                           "@position" : [ 10745, 9828 ],
                            "base" : {
                               "@collapsed" : false,
                               "@name" : "Wave 3D",
-                              "@position" : [ 10634, 9438 ],
+                              "@position" : [ 11052, 9689 ],
                               "directions" : "y",
                               "frequency" : [ 0, 0.15000000596046448, 0 ],
                               "offset" : [ 898.55523681640625, 353.46640014648438, -376.78546142578125 ],
@@ -377,7 +464,7 @@
                            "distortion" : {
                               "@collapsed" : false,
                               "@name" : "Worley 3D",
-                              "@position" : [ 10634, 9601 ],
+                              "@position" : [ 11052, 9852 ],
                               "cellCount" : 1,
                               "cellScale" : 3.7599999904632568,
                               "components" : [
@@ -416,27 +503,27 @@
                         "heightmap" : {
                            "@collapsed" : false,
                            "@name" : "Sum 2D",
-                           "@position" : [ 10327, 8861 ],
+                           "@position" : [ 10745, 9112 ],
                            "frequency" : [ 1, 1 ],
                            "terms" : [
                               {
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Min 2D",
-                                    "@position" : [ 10657, 8772 ],
+                                    "@position" : [ 11075, 9023 ],
                                     "frequency" : [ 1, 1 ],
                                     "terms" : [
                                        {
                                           "@collapsed" : false,
                                           "@name" : "Remap 2D",
-                                          "@position" : [ 10960, 8690 ],
+                                          "@position" : [ 11378, 8941 ],
                                           "clamp" : true,
                                           "clampPower" : 10,
                                           "frequency" : [ 1, 1 ],
                                           "fun" : {
                                              "@collapsed" : false,
                                              "@name" : "Worley 2D",
-                                             "@position" : [ 11254, 8647 ],
+                                             "@position" : [ 11672, 8898 ],
                                              "cellCount" : 2,
                                              "cellScale" : 0.75,
                                              "components" : [
@@ -458,7 +545,7 @@
                                        {
                                           "@collapsed" : false,
                                           "@name" : "Constant 2D",
-                                          "@position" : [ 10960, 8925 ],
+                                          "@position" : [ 11378, 9176 ],
                                           "frequency" : [ 1, 1 ],
                                           "offset" : [ -358.65414428710938, -376.30245971679688 ],
                                           "offset-hash" : "eFf7qgFyMZvhJ83U",
@@ -475,21 +562,21 @@
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Remap 2D",
-                                    "@position" : [ 10657, 9097 ],
+                                    "@position" : [ 11075, 9348 ],
                                     "clamp" : true,
                                     "clampPower" : 10,
                                     "frequency" : [ 2, 2 ],
                                     "fun" : {
                                        "@collapsed" : false,
                                        "@name" : "Remap 2D",
-                                       "@position" : [ 10951, 9097 ],
+                                       "@position" : [ 11369, 9348 ],
                                        "clamp" : true,
                                        "clampPower" : 10,
                                        "frequency" : [ 1.8200000524520874, 1.8200000524520874 ],
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Worley 2D",
-                                          "@position" : [ 11245, 9054 ],
+                                          "@position" : [ 11663, 9305 ],
                                           "cellCount" : 4,
                                           "cellScale" : 20,
                                           "components" : [
@@ -519,7 +606,7 @@
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Simplex 2D",
-                                    "@position" : [ 10657, 9332 ],
+                                    "@position" : [ 11075, 9583 ],
                                     "frequency" : [ 0.43600001931190491, 0.43600001931190491 ],
                                     "offset" : [ 296.6292724609375, 219.58708190917969 ],
                                     "offset-hash" : "CxIwjcWDpaVQnoK7",
@@ -546,7 +633,7 @@
                         "surface_substrate" : {
                            "@collapsed" : false,
                            "@name" : "Standard Substrate",
-                           "@position" : [ 10327, 9902 ],
+                           "@position" : [ 10745, 10153 ],
                            "strates" : [
                               {
                                  "averageDepth" : 32,
@@ -603,7 +690,7 @@
                "strata" : {
                   "@collapsed" : false,
                   "@name" : "Standard Strata",
-                  "@position" : [ 9948, 6746 ],
+                  "@position" : [ 10366, 6725 ],
                   "strata" : [
                      {
                         "averageDepth" : 2,
@@ -615,12 +702,12 @@
                         "yNoise" : {
                            "@collapsed" : false,
                            "@name" : "Fractal 2D",
-                           "@position" : [ 10251, 6714 ],
+                           "@position" : [ 10669, 6693 ],
                            "frequency" : [ 1, 1 ],
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Simplex 2D",
-                              "@position" : [ 10533, 6860 ],
+                              "@position" : [ 10951, 6839 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ -240.51271057128906, -69.57440185546875 ],
                               "offset-hash" : "Xa2TvHl64bSAw5DO",
@@ -658,11 +745,11 @@
                "threeD" : null,
                "threeDMaxY" : {
                   "enabled" : false,
-                  "value" : 256
+                  "value" : 186
                },
                "threeDMinY" : {
                   "enabled" : false,
-                  "value" : 0
+                  "value" : -64
                },
                "threeDSurfaceMaxY" : {
                   "enabled" : false,
@@ -670,23 +757,23 @@
                },
                "threeDSurfaceMinY" : {
                   "enabled" : false,
-                  "value" : 0
+                  "value" : -64
                },
                "threeDThresholdBias" : {
                   "enabled" : false,
-                  "value" : -1
+                  "value" : 1
                },
                "threed_decorations" : null,
                "threed_substrate" : null,
                "x" : {
                   "@collapsed" : false,
                   "@name" : "Fractal 2D",
-                  "@position" : [ 9948, 7112 ],
+                  "@position" : [ 10366, 7363 ],
                   "frequency" : [ 0.5, 0.5 ],
                   "fun" : {
                      "@collapsed" : false,
                      "@name" : "Perlin 2D",
-                     "@position" : [ 10230, 7258 ],
+                     "@position" : [ 10648, 7509 ],
                      "frequency" : [ 1, 1 ],
                      "offset" : [ 372.33843994140625, -201.19413757324219 ],
                      "offset-hash" : "PbnoWIRw7kcSHGgZ",
@@ -719,12 +806,301 @@
             "temperature" : 0.5,
             "vegetation" : 0.5,
             "weight" : 0.5
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "Mountain Portals",
+            "@position" : [ 9254, 10834 ],
+            "altitude" : 1,
+            "humidity" : 0.5,
+            "part" : {
+               "@collapsed" : false,
+               "@name" : "Unnamed Biome Part",
+               "@position" : [ 9599, 10449 ],
+               "@selector-open" : false,
+               "@toggle-caves" : true,
+               "@toggle-ccaves" : true,
+               "@toggle-csurface" : true,
+               "@toggle-cthreed" : true,
+               "@toggle-data" : true,
+               "@toggle-drop" : true,
+               "@toggle-heightmap" : true,
+               "@toggle-selector" : false,
+               "@toggle-stage" : true,
+               "@toggle-threed" : true,
+               "@toggle-visualise" : true,
+               "@x-name" : "x",
+               "@y-name" : "y",
+               "caveSurfaceShrink" : {
+                  "enabled" : true,
+                  "value" : 1.8600000143051147
+               },
+               "caveThresholdBias" : {
+                  "enabled" : true,
+                  "value" : 0.85999995470046997
+               },
+               "caves" : {
+                  "@collapsed" : false,
+                  "@name" : "Remap 3D",
+                  "@position" : [ 9944, 11244 ],
+                  "clamp" : false,
+                  "clampPower" : 5,
+                  "frequency" : [ 1, 1, 1 ],
+                  "fun" : {
+                     "@collapsed" : false,
+                     "@name" : "Simplex 3D",
+                     "@position" : [ 10227, 11276 ],
+                     "frequency" : [ 1, 1, 1 ],
+                     "offset" : [ 594.204833984375, 214.36033630371094, -47.291862487792969 ],
+                     "offset-hash" : "CyHc8Et8YMDrxStm",
+                     "type" : "simplex"
+                  },
+                  "max" : -1,
+                  "min" : -0.15000000596046448,
+                  "type" : "remap"
+               },
+               "caves_decorations" : null,
+               "caves_substrate" : null,
+               "distortion" : null,
+               "distortionStrength" : {
+                  "enabled" : false,
+                  "value" : 0
+               },
+               "drop" : null,
+               "dropMaxDepth" : {
+                  "enabled" : false,
+                  "value" : 0
+               },
+               "dropMaxGradient" : {
+                  "enabled" : false,
+                  "value" : 0
+               },
+               "dropMaxNoGravel" : {
+                  "enabled" : false,
+                  "value" : 0
+               },
+               "heightmap" : {
+                  "@collapsed" : false,
+                  "@name" : "Remap 2D",
+                  "@position" : [ 9944, 10540 ],
+                  "clamp" : false,
+                  "clampPower" : 10,
+                  "frequency" : [ 1, 1 ],
+                  "fun" : {
+                     "@collapsed" : false,
+                     "@name" : "Fractal 2D",
+                     "@position" : [ 10247, 10426 ],
+                     "frequency" : [ 1, 1 ],
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Perlin 2D",
+                        "@position" : [ 10529, 10572 ],
+                        "frequency" : [ 1, 1 ],
+                        "offset" : [ -312.5718994140625, -114.69398498535156 ],
+                        "offset-hash" : "hvrZLvYCiv6zT8f5",
+                        "type" : "perlin"
+                     },
+                     "octaves" : [
+                        {
+                           "multiplier" : 0.35000002384185791,
+                           "offset" : [ 355.10186767578125, -321.10601806640625 ],
+                           "offset-hash" : "cuI4uoSBCSDK5qNO",
+                           "scale" : 1
+                        },
+                        {
+                           "multiplier" : 0.45000001788139343,
+                           "offset" : [ -350.37765502929688, -239.37156677246094 ],
+                           "offset-hash" : "DKgISvUSSHCOkySO",
+                           "scale" : 2
+                        },
+                        {
+                           "multiplier" : 0.20000000298023224,
+                           "offset" : [ -87.580680847167969, -131.82432556152344 ],
+                           "offset-hash" : "5VSyrLgI7Ffn8aYJ",
+                           "scale" : 4
+                        }
+                     ],
+                     "type" : "fractal"
+                  },
+                  "max" : -1.4260001182556152,
+                  "min" : -2,
+                  "type" : "remap"
+               },
+               "heightmapMaxY" : {
+                  "enabled" : true,
+                  "value" : 170
+               },
+               "heightmapMinY" : {
+                  "enabled" : true,
+                  "value" : 162
+               },
+               "parts" : [],
+               "shrink" : null,
+               "strata" : null,
+               "surface_decorations" : null,
+               "surface_substrate" : null,
+               "threeD" : {
+                  "@collapsed" : false,
+                  "@name" : "Fractal 3D",
+                  "@position" : [ 9944, 10823 ],
+                  "frequency" : [ 1, 1, 1 ],
+                  "fun" : {
+                     "@collapsed" : false,
+                     "@name" : "Worley 3D",
+                     "@position" : [ 10240, 10883 ],
+                     "cellCount" : 8,
+                     "cellScale" : 3.6099998950958252,
+                     "components" : [
+                        {
+                           "k" : 0,
+                           "multiplier" : 1,
+                           "power" : 1.5570000410079956
+                        }
+                     ],
+                     "frequency" : [ 1.6260000467300415, 1.6260000467300415, 1.6260000467300415 ],
+                     "offset" : [ -294.5784912109375, -225.79681396484375, -209.88764953613281 ],
+                     "offset-hash" : "hlPTKcCMQfydMd7Z",
+                     "type" : "worley"
+                  },
+                  "octaves" : [
+                     {
+                        "multiplier" : -0.40700000524520874,
+                        "offset" : [ 181.86940002441406, -180.14134216308594, -207.29574584960938 ],
+                        "offset-hash" : "R5s8S2ypwY4N7zIs",
+                        "scale" : 1
+                     },
+                     {
+                        "multiplier" : -0.39100003242492676,
+                        "offset" : [ 254.28268432617188, -263.04962158203125, -272.00811767578125 ],
+                        "offset-hash" : "RTPHfoRNkdDAIjBj",
+                        "scale" : 2
+                     },
+                     {
+                        "multiplier" : -0.49800002574920654,
+                        "offset" : [ 1196.0941162109375, 274.22250366210938, -82.671279907226562 ],
+                        "offset-hash" : "TIC7QJi7t5Q8LnxD",
+                        "scale" : 4
+                     }
+                  ],
+                  "type" : "fractal"
+               },
+               "threeDMaxY" : {
+                  "enabled" : true,
+                  "value" : 256
+               },
+               "threeDMinY" : {
+                  "enabled" : true,
+                  "value" : -64
+               },
+               "threeDSurfaceMaxY" : {
+                  "enabled" : true,
+                  "value" : 26
+               },
+               "threeDSurfaceMinY" : {
+                  "enabled" : true,
+                  "value" : -44.5
+               },
+               "threeDThresholdBias" : {
+                  "enabled" : true,
+                  "value" : 1
+               },
+               "threed_decorations" : null,
+               "threed_substrate" : null,
+               "x" : null,
+               "y" : null
+            },
+            "temperature" : 0.5,
+            "vegetation" : 0.5,
+            "weight" : 0.5
          }
       ],
       "caves" : null,
       "distortion" : null,
       "distribution" : {
-         "altitude" : null,
+         "altitude" : {
+            "@collapsed" : false,
+            "@name" : "Distort 2D",
+            "@position" : [ 9254, 5717 ],
+            "base" : {
+               "@collapsed" : false,
+               "@name" : "Remap 2D",
+               "@position" : [ 9576, 5492 ],
+               "clamp" : true,
+               "clampPower" : 10,
+               "frequency" : [ 0.47800001502037048, 0.47800001502037048 ],
+               "fun" : {
+                  "@collapsed" : false,
+                  "@name" : "Remap 2D",
+                  "@position" : [ 9870, 5492 ],
+                  "clamp" : true,
+                  "clampPower" : 10,
+                  "frequency" : [ 0.42000001668930054, 0.42000001668930054 ],
+                  "fun" : {
+                     "@collapsed" : false,
+                     "@name" : "Worley 2D",
+                     "@position" : [ 10164, 5449 ],
+                     "cellCount" : 1,
+                     "cellScale" : 20,
+                     "components" : [
+                        {
+                           "k" : 0,
+                           "multiplier" : -1,
+                           "power" : 0.38000002503395081
+                        }
+                     ],
+                     "frequency" : [ 0.28600001335144043, 0.28600001335144043 ],
+                     "offset" : [ 259.88555908203125, 248.81938171386719 ],
+                     "offset-hash" : "5HhDwu5gAh5TF3",
+                     "type" : "worley"
+                  },
+                  "max" : 0.81600004434585571,
+                  "min" : -0.3020000159740448,
+                  "type" : "remap"
+               },
+               "max" : 0.59200000762939453,
+               "min" : -0.46000000834465027,
+               "type" : "remap"
+            },
+            "distortion" : {
+               "@collapsed" : false,
+               "@name" : "Fractal 2D",
+               "@position" : [ 9576, 5727 ],
+               "frequency" : [ 1, 1 ],
+               "fun" : {
+                  "@collapsed" : false,
+                  "@name" : "Simplex 2D",
+                  "@position" : [ 9858, 5873 ],
+                  "frequency" : [ 1, 1 ],
+                  "offset" : [ 75.532157897949219, -102.03947448730469 ],
+                  "offset-hash" : "HOzKIkTAr0zdE3rB",
+                  "type" : "simplex"
+               },
+               "octaves" : [
+                  {
+                     "multiplier" : 0.75000005960464478,
+                     "offset" : [ 252.09735107421875, -207.44583129882812 ],
+                     "offset-hash" : "TRA7XUZr22d03u9u",
+                     "scale" : 0.25
+                  },
+                  {
+                     "multiplier" : 0.25,
+                     "offset" : [ -204.63569641113281, 230.1202392578125 ],
+                     "offset-hash" : "TVK4dMdHwjoiyqsG",
+                     "scale" : 0.5
+                  },
+                  {
+                     "multiplier" : 1,
+                     "offset" : [ -103.68199920654297, 87.150230407714844 ],
+                     "offset-hash" : "DFoDnYEJ1oDV3CYZ",
+                     "scale" : 1
+                  }
+               ],
+               "type" : "fractal"
+            },
+            "distortionScale" : [ 1, 1 ],
+            "frequency" : [ 1, 1 ],
+            "type" : "distort"
+         },
          "humidity" : null,
          "temperature" : null,
          "vegetation" : null
@@ -753,7 +1129,7 @@
          "MOULD_DEFAULT_BASE" : 1,
          "MUD_DEFAULT_BASE" : 1,
          "ROCK_IGNEOUS_BASE" : 4,
-         "ROCK_METAMORPHIC_BASE" : 5,
+         "ROCK_METAMORPHIC_BASE" : 10,
          "ROCK_SEDIMENTARY_BASE" : 4,
          "SAND_DEFAULT_BASE" : 16,
          "SOIL_CLAY_BASE" : 1,
@@ -770,7 +1146,7 @@
          "WOOD_WAXY_LEAVES" : 14
       },
       "resourceCategory" : "test_category",
-      "worldRank" : 4,
+      "worldRank" : 7,
       "worldSize" : 288
    }
 }
