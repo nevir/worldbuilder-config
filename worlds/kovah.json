@@ -3,7 +3,7 @@
    "@configType" : "WORLD",
    "@name" : "Kovah",
    "@position" : [ 7764, 8160 ],
-   "@scroll" : [ 11075.140625, 8757.6728515625, 0.2749999463558197 ],
+   "@scroll" : [ 11072.6171875, 8603.29296875, -0.074999988079071045 ],
    "@unlinked" : [
       {
          "data" : {
@@ -585,6 +585,48 @@
                                     },
                                     {
                                        "index" : -1,
+                                       "name" : "f2"
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "terms"
+                                    },
+                                    {
+                                       "index" : 0,
+                                       "name" : ""
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "fun"
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "terms"
+                                    },
+                                    {
+                                       "index" : 0,
+                                       "name" : ""
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "multiplier"
+                                    }
+                                 ],
+                                 "linkType" : "LT:CUSTOM_SLIDER",
+                                 "sliderValue" : 0.10000000149011612
+                              },
+                              {
+                                 "linkPath" : [
+                                    {
+                                       "index" : -1,
+                                       "name" : "noise2d"
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "fun"
+                                    },
+                                    {
+                                       "index" : -1,
                                        "name" : "f1"
                                     }
                                  ],
@@ -666,13 +708,21 @@
                                     }
                                  ],
                                  "linkType" : "LT:NOISE_2D",
-                                 "nodeValue" : null
+                                 "nodeValue" : {
+                                    "@collapsed" : false,
+                                    "@name" : "Simplex 2D",
+                                    "@position" : [ 11128, 8528 ],
+                                    "frequency" : [ 1.9540001153945923, 1.9540001153945923 ],
+                                    "offset" : [ 125.03242492675781, 283.05007934570312 ],
+                                    "offset-hash" : "gPcOVTUgazIb1Ors",
+                                    "type" : "simplex"
+                                 }
                               }
                            ],
                            "offset" : [ 95.283439636230469, -239.02757263183594 ],
                            "offset-hash" : "sjoDBYckNRGbaVwt",
                            "reference" : "noise2d/Rivers.json",
-                           "tick" : 2,
+                           "tick" : 3,
                            "type" : "reference"
                         },
                         "heightmapMaxY" : {
