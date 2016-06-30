@@ -3,7 +3,7 @@
    "@configType" : "NOISE2D",
    "@name" : "Rivers",
    "@position" : [ 7932, 8160 ],
-   "@scroll" : [ 10313.111328125, 7965.7373046875, 0.024999994784593582 ],
+   "@scroll" : [ 8126.58740234375, 8443.8974609375, -0.22500002384185791 ],
    "@toggle-test" : true,
    "@toggle-world" : false,
    "@unlinked" : [],
@@ -135,7 +135,7 @@
                                        "offset-hash" : "KchKVkivbJmjoe0y",
                                        "type" : "simplex"
                                     },
-                                    "distortionScale" : [ 0.20000000298023224, 0.20000000298023224 ],
+                                    "distortionScale" : [ 0.25, 0.25 ],
                                     "frequency" : [ 1, 1 ],
                                     "type" : "distort"
                                  },
@@ -584,6 +584,73 @@
             "sliderMax" : 0,
             "sliderMin" : 0,
             "sliderStep" : 0
+         },
+         {
+            "blockConstraint" : 1498449184,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "noise2d"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "base"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "distortionScale"
+               },
+               {
+                  "index" : -1,
+                  "name" : "@xz"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "river distortion",
+            "shortPath" : "Distort 2D.scale.@xz",
+            "sliderCheck" : false,
+            "sliderDefault" : 0.25,
+            "sliderMax" : 1,
+            "sliderMin" : 0.0010000000474974513,
+            "sliderStep" : 0.0010000000474974513
          }
       ]
    },
@@ -730,7 +797,7 @@
                                              "offset-hash" : "KchKVkivbJmjoe0y",
                                              "type" : "simplex"
                                           },
-                                          "distortionScale" : [ 0.20000000298023224, 0.20000000298023224 ],
+                                          "distortionScale" : [ 0.25, 0.25 ],
                                           "frequency" : [ 1, 1 ],
                                           "type" : "distort"
                                        },
@@ -1179,6 +1246,73 @@
                   "sliderMax" : 0,
                   "sliderMin" : 0,
                   "sliderStep" : 0
+               },
+               {
+                  "blockConstraint" : 1498449184,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "noise2d"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "base"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "distortionScale"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "river distortion",
+                  "shortPath" : "Distort 2D.scale.@xz",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 0.25,
+                  "sliderMax" : 1,
+                  "sliderMin" : 0.0010000000474974513,
+                  "sliderStep" : 0.0010000000474974513
                }
             ]
          },
@@ -1503,6 +1637,64 @@
                "offset-hash" : "ZtJpPgtAGHiX4QQz",
                "type" : "simplex"
             }
+         },
+         {
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "noise2d"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "base"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "distortionScale"
+               },
+               {
+                  "index" : -1,
+                  "name" : "@xz"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "sliderValue" : 0.25
          }
       ],
       "offset" : [ 286.28976440429688, 305.94097900390625 ],
