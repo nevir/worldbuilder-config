@@ -3,13 +3,13 @@
    "@configType" : "WORLD",
    "@name" : "Kovah",
    "@position" : [ 7764, 8160 ],
-   "@scroll" : [ 10706.451171875, 8630.8828125, -0.02499983087182045 ],
+   "@scroll" : [ 8425.037109375, 8616.85546875, 1.2750000953674316 ],
    "@unlinked" : [],
    "@version" : 6,
    "generator" : {
       "@collapsed" : false,
       "@name" : "Generator",
-      "@position" : [ 8305, 8207 ],
+      "@position" : [ 8292, 8207 ],
       "@toggle-distribution" : true,
       "@toggle-global" : true,
       "@toggle-visualise" : true,
@@ -19,13 +19,13 @@
          {
             "@collapsed" : false,
             "@name" : "<root>",
-            "@position" : [ 8846, 8347 ],
+            "@position" : [ 8820, 8347 ],
             "altitude" : 0.5,
             "humidity" : 0.5,
             "part" : {
                "@collapsed" : false,
                "@name" : "<root>",
-               "@position" : [ 9387, 8124 ],
+               "@position" : [ 9348, 8124 ],
                "@selector-open" : false,
                "@toggle-caves" : false,
                "@toggle-ccaves" : true,
@@ -91,7 +91,7 @@
                      "part" : {
                         "@collapsed" : false,
                         "@name" : "Desert",
-                        "@position" : [ 9928, 7492 ],
+                        "@position" : [ 9876, 7598 ],
                         "@selector-open" : false,
                         "@toggle-caves" : false,
                         "@toggle-ccaves" : true,
@@ -138,14 +138,14 @@
                         "heightmap" : {
                            "@collapsed" : false,
                            "@name" : "Sum 2D",
-                           "@position" : [ 10236, 7649 ],
+                           "@position" : [ 10184, 7755 ],
                            "frequency" : [ 1, 1 ],
                            "terms" : [
                               {
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Heightmap - Dunes",
-                                    "@position" : [ 10519, 7686 ],
+                                    "@position" : [ 10467, 7792 ],
                                     "frequency" : [ 1, 1 ],
                                     "links" : [
                                        {
@@ -210,7 +210,7 @@
                         "surface_substrate" : {
                            "@collapsed" : false,
                            "@name" : "Standard Substrate",
-                           "@position" : [ 10236, 7852 ],
+                           "@position" : [ 10184, 7958 ],
                            "strates" : [
                               {
                                  "averageDepth" : 6,
@@ -274,7 +274,7 @@
                      "part" : {
                         "@collapsed" : false,
                         "@name" : "Riverlands",
-                        "@position" : [ 9928, 8395 ],
+                        "@position" : [ 9876, 8395 ],
                         "@selector-open" : false,
                         "@toggle-caves" : false,
                         "@toggle-ccaves" : true,
@@ -320,8 +320,8 @@
                         },
                         "heightmap" : {
                            "@collapsed" : false,
-                           "@name" : "Rivers",
-                           "@position" : [ 10264, 8450 ],
+                           "@name" : "Rivers - Standard",
+                           "@position" : [ 10198, 8490 ],
                            "frequency" : [ 1, 1 ],
                            "links" : [
                               {
@@ -336,265 +336,27 @@
                                     },
                                     {
                                        "index" : -1,
-                                       "name" : "base"
+                                       "name" : "links"
                                     },
                                     {
-                                       "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 0,
+                                       "index" : 5,
                                        "name" : ""
                                     },
                                     {
                                        "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 0,
-                                       "name" : ""
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "base"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    }
-                                 ],
-                                 "linkType" : "LT:NOISE_2D",
-                                 "nodeValue" : {
-                                    "@collapsed" : false,
-                                    "@name" : "Simplex 2D",
-                                    "@position" : [ 10674, 8205 ],
-                                    "frequency" : [ 0.52900004386901855, 0.52900004386901855 ],
-                                    "offset" : [ -300.93841552734375, 335.16693115234375 ],
-                                    "offset-hash" : "gXHvzYwGYxRtm3M4",
-                                    "type" : "simplex"
-                                 }
-                              },
-                              {
-                                 "linkPath" : [
-                                    {
-                                       "index" : -1,
-                                       "name" : "noise2d"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "base"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 0,
-                                       "name" : ""
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 0,
-                                       "name" : ""
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "min"
-                                    }
-                                 ],
-                                 "linkType" : "LT:CUSTOM_SLIDER",
-                                 "sliderValue" : 0.052000001072883606
-                              },
-                              {
-                                 "linkPath" : [
-                                    {
-                                       "index" : -1,
-                                       "name" : "noise2d"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "base"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 0,
-                                       "name" : ""
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 0,
-                                       "name" : ""
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "distortionScale"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "@xz"
-                                    }
-                                 ],
-                                 "linkType" : "LT:CUSTOM_SLIDER",
-                                 "sliderValue" : 0.35000002384185791
-                              },
-                              {
-                                 "linkPath" : [
-                                    {
-                                       "index" : -1,
-                                       "name" : "noise2d"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "f2"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 2,
-                                       "name" : ""
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "multiplier"
-                                    }
-                                 ],
-                                 "linkType" : "LT:CUSTOM_SLIDER",
-                                 "sliderValue" : 0.96900004148483276
-                              },
-                              {
-                                 "linkPath" : [
-                                    {
-                                       "index" : -1,
-                                       "name" : "noise2d"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "base"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 0,
-                                       "name" : ""
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 0,
-                                       "name" : ""
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "max"
-                                    }
-                                 ],
-                                 "linkType" : "LT:CUSTOM_SLIDER",
-                                 "sliderValue" : -0.54500001668930054
-                              },
-                              {
-                                 "linkPath" : [
-                                    {
-                                       "index" : -1,
-                                       "name" : "noise2d"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "f1"
+                                       "name" : "nodeValue"
                                     }
                                  ],
                                  "linkType" : "LT:NOISE_2D",
                                  "nodeValue" : {
                                     "@collapsed" : false,
                                     "@name" : "Fractal 2D",
-                                    "@position" : [ 10582, 8387 ],
+                                    "@position" : [ 10501, 8387 ],
                                     "frequency" : [ 0.68700003623962402, 0.68700003623962402 ],
                                     "fun" : {
                                        "@collapsed" : false,
                                        "@name" : "Perlin 2D",
-                                       "@position" : [ 10864, 8533 ],
+                                       "@position" : [ 10783, 8533 ],
                                        "frequency" : [ 1, 1 ],
                                        "offset" : [ 60.639354705810547, -114.04297637939453 ],
                                        "offset-hash" : "DBYckNRGbaVwtRMR",
@@ -635,70 +397,19 @@
                                     },
                                     {
                                        "index" : -1,
-                                       "name" : "f2"
+                                       "name" : "links"
                                     },
                                     {
-                                       "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 0,
+                                       "index" : 3,
                                        "name" : ""
                                     },
                                     {
                                        "index" : -1,
-                                       "name" : "fun"
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "terms"
-                                    },
-                                    {
-                                       "index" : 0,
-                                       "name" : ""
-                                    },
-                                    {
-                                       "index" : -1,
-                                       "name" : "fun"
+                                       "name" : "sliderValue"
                                     }
                                  ],
-                                 "linkType" : "LT:NOISE_2D",
-                                 "nodeValue" : {
-                                    "@collapsed" : false,
-                                    "@name" : "Fractal 2D",
-                                    "@position" : [ 10653, 8809 ],
-                                    "frequency" : [ 2, 2 ],
-                                    "fun" : {
-                                       "@collapsed" : false,
-                                       "@name" : "Perlin 2D",
-                                       "@position" : [ 10994, 8781 ],
-                                       "frequency" : [ 1, 1 ],
-                                       "offset" : [ -356.05401611328125, 206.53898620605469 ],
-                                       "offset-hash" : "p8TKJsMjotxctO3T",
-                                       "type" : "perlin"
-                                    },
-                                    "octaves" : [
-                                       {
-                                          "multiplier" : 0.5,
-                                          "offset" : [ -124.36103057861328, -393.49746704101562 ],
-                                          "offset-hash" : "Pgd4hNNCWeWecz3e",
-                                          "scale" : 1
-                                       },
-                                       {
-                                          "multiplier" : 0.20000000298023224,
-                                          "offset" : [ 84.968338012695312, 175.10246276855469 ],
-                                          "offset-hash" : "4NAktREMK0UVR5ma",
-                                          "scale" : 2
-                                       },
-                                       {
-                                          "multiplier" : 0.30000001192092896,
-                                          "offset" : [ 368.28564453125, 252.16581726074219 ],
-                                          "offset-hash" : "4uLGMpZcoaAS1ApM",
-                                          "scale" : 4
-                                       }
-                                    ],
-                                    "type" : "fractal"
-                                 }
+                                 "linkType" : "LT:CUSTOM_SLIDER",
+                                 "sliderValue" : 1
                               },
                               {
                                  "linkPath" : [
@@ -712,15 +423,25 @@
                                     },
                                     {
                                        "index" : -1,
-                                       "name" : "f2"
+                                       "name" : "links"
+                                    },
+                                    {
+                                       "index" : 1,
+                                       "name" : ""
                                     },
                                     {
                                        "index" : -1,
-                                       "name" : "terms"
-                                    },
+                                       "name" : "sliderValue"
+                                    }
+                                 ],
+                                 "linkType" : "LT:CUSTOM_SLIDER",
+                                 "sliderValue" : 0
+                              },
+                              {
+                                 "linkPath" : [
                                     {
-                                       "index" : 0,
-                                       "name" : ""
+                                       "index" : -1,
+                                       "name" : "noise2d"
                                     },
                                     {
                                        "index" : -1,
@@ -728,25 +449,25 @@
                                     },
                                     {
                                        "index" : -1,
-                                       "name" : "terms"
+                                       "name" : "links"
                                     },
                                     {
-                                       "index" : 0,
+                                       "index" : 4,
                                        "name" : ""
                                     },
                                     {
                                        "index" : -1,
-                                       "name" : "multiplier"
+                                       "name" : "sliderValue"
                                     }
                                  ],
                                  "linkType" : "LT:CUSTOM_SLIDER",
-                                 "sliderValue" : 0.20000000298023224
+                                 "sliderValue" : -0.5
                               }
                            ],
-                           "offset" : [ 95.283439636230469, -239.02757263183594 ],
-                           "offset-hash" : "sjoDBYckNRGbaVwt",
-                           "reference" : "noise2d/Rivers.json",
-                           "tick" : 7,
+                           "offset" : [ 309.43466186523438, -73.341064453125 ],
+                           "offset-hash" : "c38KnngUCKiJBLS6",
+                           "reference" : "noise2d/RiversStandard.json",
+                           "tick" : 0,
                            "type" : "reference"
                         },
                         "heightmapMaxY" : {
@@ -764,7 +485,7 @@
                         "surface_substrate" : {
                            "@collapsed" : false,
                            "@name" : "Standard Substrate",
-                           "@position" : [ 10264, 8891 ],
+                           "@position" : [ 10198, 8785 ],
                            "strates" : [
                               {
                                  "averageDepth" : 6,
@@ -828,7 +549,7 @@
                      "part" : {
                         "@collapsed" : false,
                         "@name" : "Mesa",
-                        "@position" : [ 9928, 9163 ],
+                        "@position" : [ 9876, 9057 ],
                         "@selector-open" : false,
                         "@toggle-caves" : false,
                         "@toggle-ccaves" : true,
@@ -875,7 +596,7 @@
                         "heightmap" : {
                            "@collapsed" : false,
                            "@name" : "Heightmap - Angled Hills",
-                           "@position" : [ 10234, 9266 ],
+                           "@position" : [ 10182, 9160 ],
                            "frequency" : [ 1, 1 ],
                            "links" : [
                               {
@@ -962,7 +683,7 @@
                         "surface_substrate" : {
                            "@collapsed" : false,
                            "@name" : "Standard Substrate",
-                           "@position" : [ 10234, 9441 ],
+                           "@position" : [ 10182, 9335 ],
                            "strates" : [
                               {
                                  "averageDepth" : 6,
@@ -1026,7 +747,7 @@
                      "part" : {
                         "@collapsed" : false,
                         "@name" : "Mountains",
-                        "@position" : [ 9928, 9816 ],
+                        "@position" : [ 9876, 9710 ],
                         "@selector-open" : false,
                         "@toggle-caves" : false,
                         "@toggle-ccaves" : true,
@@ -1073,7 +794,7 @@
                         "heightmap" : {
                            "@collapsed" : false,
                            "@name" : "Heightmap - Pitted",
-                           "@position" : [ 10229, 9954 ],
+                           "@position" : [ 10177, 9848 ],
                            "frequency" : [ 1, 1 ],
                            "links" : [],
                            "offset" : [ 255.29563903808594, -264.7005615234375 ],
@@ -1097,7 +818,7 @@
                         "surface_substrate" : {
                            "@collapsed" : false,
                            "@name" : "Standard Substrate",
-                           "@position" : [ 10229, 10060 ],
+                           "@position" : [ 10177, 9954 ],
                            "strates" : [
                               {
                                  "averageDepth" : 6,
@@ -1180,18 +901,18 @@
                "x" : {
                   "@collapsed" : false,
                   "@name" : "Distort 2D (altitude)",
-                  "@position" : [ 9928, 6686 ],
+                  "@position" : [ 9876, 6792 ],
                   "base" : {
                      "@collapsed" : false,
                      "@name" : "Remap 2D",
-                     "@position" : [ 10250, 6473 ],
+                     "@position" : [ 10198, 6579 ],
                      "clamp" : false,
                      "clampPower" : 5,
                      "frequency" : [ 1, 1 ],
                      "fun" : {
                         "@collapsed" : false,
                         "@name" : "Worley 2D",
-                        "@position" : [ 10544, 6419 ],
+                        "@position" : [ 10492, 6525 ],
                         "cellCount" : 2,
                         "cellScale" : 7.5,
                         "components" : [
@@ -1213,12 +934,12 @@
                   "distortion" : {
                      "@collapsed" : false,
                      "@name" : "Fractal 2D",
-                     "@position" : [ 10250, 6696 ],
+                     "@position" : [ 10198, 6802 ],
                      "frequency" : [ 1, 1 ],
                      "fun" : {
                         "@collapsed" : false,
                         "@name" : "Simplex 2D",
-                        "@position" : [ 10532, 6842 ],
+                        "@position" : [ 10480, 6948 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ -221.50607299804688, -330.9368896484375 ],
                         "offset-hash" : "wcrdzqwJZNBgB4LB",
@@ -1253,16 +974,16 @@
                "y" : {
                   "@collapsed" : false,
                   "@name" : "Fractal 2D (humidity)",
-                  "@position" : [ 9928, 7094 ],
+                  "@position" : [ 9876, 7200 ],
                   "frequency" : [ 0.35000002384185791, 0.35000002384185791 ],
                   "fun" : {
                      "@collapsed" : false,
                      "@name" : "Distort 2D",
-                     "@position" : [ 10230, 7223 ],
+                     "@position" : [ 10178, 7329 ],
                      "base" : {
                         "@collapsed" : false,
                         "@name" : "Perlin 2D",
-                        "@position" : [ 10532, 7101 ],
+                        "@position" : [ 10480, 7207 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ -34.296176910400391, -52.365299224853516 ],
                         "offset-hash" : "HcvIpL3wwiVV7tX",
@@ -1271,7 +992,7 @@
                      "distortion" : {
                         "@collapsed" : false,
                         "@name" : "Worley 2D",
-                        "@position" : [ 10532, 7207 ],
+                        "@position" : [ 10480, 7313 ],
                         "cellCount" : 4,
                         "cellScale" : 0.5,
                         "components" : [
