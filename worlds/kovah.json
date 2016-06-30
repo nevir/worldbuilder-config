@@ -3,7 +3,7 @@
    "@configType" : "WORLD",
    "@name" : "Kovah",
    "@position" : [ 7764, 8160 ],
-   "@scroll" : [ 10908.521484375, 8545.25, -0.10000006854534149 ],
+   "@scroll" : [ 11075.140625, 8757.6728515625, 0.2749999463558197 ],
    "@unlinked" : [
       {
          "data" : {
@@ -184,53 +184,7 @@
                "type" : "min"
             },
             "basePower" : 1,
-            "f1" : {
-               "@collapsed" : false,
-               "@name" : "Remap 2D",
-               "@position" : [ 11685, 8720 ],
-               "clamp" : false,
-               "clampPower" : 5,
-               "frequency" : [ 1, 1 ],
-               "fun" : {
-                  "@collapsed" : false,
-                  "@name" : "Fractal 2D",
-                  "@position" : [ 11988, 8606 ],
-                  "frequency" : [ 0.39200001955032349, 0.39200001955032349 ],
-                  "fun" : {
-                     "@collapsed" : false,
-                     "@name" : "Perlin 2D",
-                     "@position" : [ 12270, 8752 ],
-                     "frequency" : [ 1, 1 ],
-                     "offset" : [ 60.639354705810547, -114.04297637939453 ],
-                     "offset-hash" : "DBYckNRGbaVwtRMR",
-                     "type" : "perlin"
-                  },
-                  "octaves" : [
-                     {
-                        "multiplier" : 0.75000005960464478,
-                        "offset" : [ -58.332187652587891, -226.67140197753906 ],
-                        "offset-hash" : "ZvOGyagfz95myXJu",
-                        "scale" : 0.25
-                     },
-                     {
-                        "multiplier" : 0.10000000149011612,
-                        "offset" : [ -310.44784545898438, 249.47734069824219 ],
-                        "offset-hash" : "gxIhHkSfUKk2igW6",
-                        "scale" : 0.5
-                     },
-                     {
-                        "multiplier" : 0.15000000596046448,
-                        "offset" : [ -262.20492553710938, 238.72691345214844 ],
-                        "offset-hash" : "sLbGGl5lZxymvxSy",
-                        "scale" : 1
-                     }
-                  ],
-                  "type" : "fractal"
-               },
-               "max" : 1,
-               "min" : -1,
-               "type" : "remap"
-            },
+            "f1" : null,
             "f2" : {
                "@collapsed" : false,
                "@name" : "Sum 2D",
@@ -618,11 +572,65 @@
                            "@name" : "Rivers",
                            "@position" : [ 10702, 8508 ],
                            "frequency" : [ 1, 1 ],
-                           "links" : [],
+                           "links" : [
+                              {
+                                 "linkPath" : [
+                                    {
+                                       "index" : -1,
+                                       "name" : "noise2d"
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "fun"
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "f1"
+                                    }
+                                 ],
+                                 "linkType" : "LT:NOISE_2D",
+                                 "nodeValue" : {
+                                    "@collapsed" : false,
+                                    "@name" : "Fractal 2D",
+                                    "@position" : [ 11175, 8642 ],
+                                    "frequency" : [ 0.72500002384185791, 0.72500002384185791 ],
+                                    "fun" : {
+                                       "@collapsed" : false,
+                                       "@name" : "Perlin 2D",
+                                       "@position" : [ 11457, 8788 ],
+                                       "frequency" : [ 1, 1 ],
+                                       "offset" : [ 60.639354705810547, -114.04297637939453 ],
+                                       "offset-hash" : "DBYckNRGbaVwtRMR",
+                                       "type" : "perlin"
+                                    },
+                                    "octaves" : [
+                                       {
+                                          "multiplier" : 0.75000005960464478,
+                                          "offset" : [ -58.332187652587891, -226.67140197753906 ],
+                                          "offset-hash" : "ZvOGyagfz95myXJu",
+                                          "scale" : 0.25
+                                       },
+                                       {
+                                          "multiplier" : 0.10000000149011612,
+                                          "offset" : [ -310.44784545898438, 249.47734069824219 ],
+                                          "offset-hash" : "gxIhHkSfUKk2igW6",
+                                          "scale" : 0.5
+                                       },
+                                       {
+                                          "multiplier" : 0.15000000596046448,
+                                          "offset" : [ -262.20492553710938, 238.72691345214844 ],
+                                          "offset-hash" : "sLbGGl5lZxymvxSy",
+                                          "scale" : 1
+                                       }
+                                    ],
+                                    "type" : "fractal"
+                                 }
+                              }
+                           ],
                            "offset" : [ 95.283439636230469, -239.02757263183594 ],
                            "offset-hash" : "sjoDBYckNRGbaVwt",
                            "reference" : "noise2d/Rivers.json",
-                           "tick" : 0,
+                           "tick" : 1,
                            "type" : "reference"
                         },
                         "heightmapMaxY" : {

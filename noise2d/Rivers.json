@@ -3,7 +3,7 @@
    "@configType" : "NOISE2D",
    "@name" : "Rivers",
    "@position" : [ 7932, 8160 ],
-   "@scroll" : [ 8062, 8209, 0 ],
+   "@scroll" : [ 8149.328125, 8358.0390625, 0 ],
    "@toggle-test" : false,
    "@toggle-world" : false,
    "@unlinked" : [],
@@ -188,53 +188,7 @@
             "type" : "min"
          },
          "basePower" : 1,
-         "f1" : {
-            "@collapsed" : false,
-            "@name" : "Remap 2D",
-            "@position" : [ 8785, 8561 ],
-            "clamp" : false,
-            "clampPower" : 5,
-            "frequency" : [ 1, 1 ],
-            "fun" : {
-               "@collapsed" : false,
-               "@name" : "Fractal 2D",
-               "@position" : [ 9088, 8447 ],
-               "frequency" : [ 0.39200001955032349, 0.39200001955032349 ],
-               "fun" : {
-                  "@collapsed" : false,
-                  "@name" : "Perlin 2D",
-                  "@position" : [ 9370, 8593 ],
-                  "frequency" : [ 1, 1 ],
-                  "offset" : [ 60.639354705810547, -114.04297637939453 ],
-                  "offset-hash" : "DBYckNRGbaVwtRMR",
-                  "type" : "perlin"
-               },
-               "octaves" : [
-                  {
-                     "multiplier" : 0.75000005960464478,
-                     "offset" : [ -58.332187652587891, -226.67140197753906 ],
-                     "offset-hash" : "ZvOGyagfz95myXJu",
-                     "scale" : 0.25
-                  },
-                  {
-                     "multiplier" : 0.10000000149011612,
-                     "offset" : [ -310.44784545898438, 249.47734069824219 ],
-                     "offset-hash" : "gxIhHkSfUKk2igW6",
-                     "scale" : 0.5
-                  },
-                  {
-                     "multiplier" : 0.15000000596046448,
-                     "offset" : [ -262.20492553710938, 238.72691345214844 ],
-                     "offset-hash" : "sLbGGl5lZxymvxSy",
-                     "scale" : 1
-                  }
-               ],
-               "type" : "fractal"
-            },
-            "max" : 1,
-            "min" : -1,
-            "type" : "remap"
-         },
+         "f1" : null,
          "f2" : {
             "@collapsed" : false,
             "@name" : "Sum 2D",
@@ -301,7 +255,35 @@
          "frequency" : [ 1, 1 ],
          "type" : "lerp"
       },
-      "links" : []
+      "links" : [
+         {
+            "blockConstraint" : 113289728,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "noise2d"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "f1"
+               }
+            ],
+            "linkType" : "LT:NOISE_2D",
+            "name" : "terrain",
+            "shortPath" : "Lerp 2D.function low",
+            "sliderCheck" : false,
+            "sliderDefault" : 0,
+            "sliderMax" : 0,
+            "sliderMin" : 0,
+            "sliderStep" : 0
+         }
+      ]
    },
    "seed" : "I has a seed!",
    "sharedConfig" : {
@@ -499,53 +481,7 @@
                   "type" : "min"
                },
                "basePower" : 1,
-               "f1" : {
-                  "@collapsed" : false,
-                  "@name" : "Remap 2D",
-                  "@position" : [ 8785, 8561 ],
-                  "clamp" : false,
-                  "clampPower" : 5,
-                  "frequency" : [ 1, 1 ],
-                  "fun" : {
-                     "@collapsed" : false,
-                     "@name" : "Fractal 2D",
-                     "@position" : [ 9088, 8447 ],
-                     "frequency" : [ 0.39200001955032349, 0.39200001955032349 ],
-                     "fun" : {
-                        "@collapsed" : false,
-                        "@name" : "Perlin 2D",
-                        "@position" : [ 9370, 8593 ],
-                        "frequency" : [ 1, 1 ],
-                        "offset" : [ 60.639354705810547, -114.04297637939453 ],
-                        "offset-hash" : "DBYckNRGbaVwtRMR",
-                        "type" : "perlin"
-                     },
-                     "octaves" : [
-                        {
-                           "multiplier" : 0.75000005960464478,
-                           "offset" : [ -58.332187652587891, -226.67140197753906 ],
-                           "offset-hash" : "ZvOGyagfz95myXJu",
-                           "scale" : 0.25
-                        },
-                        {
-                           "multiplier" : 0.10000000149011612,
-                           "offset" : [ -310.44784545898438, 249.47734069824219 ],
-                           "offset-hash" : "gxIhHkSfUKk2igW6",
-                           "scale" : 0.5
-                        },
-                        {
-                           "multiplier" : 0.15000000596046448,
-                           "offset" : [ -262.20492553710938, 238.72691345214844 ],
-                           "offset-hash" : "sLbGGl5lZxymvxSy",
-                           "scale" : 1
-                        }
-                     ],
-                     "type" : "fractal"
-                  },
-                  "max" : 1,
-                  "min" : -1,
-                  "type" : "remap"
-               },
+               "f1" : null,
                "f2" : {
                   "@collapsed" : false,
                   "@name" : "Sum 2D",
@@ -612,7 +548,35 @@
                "frequency" : [ 1, 1 ],
                "type" : "lerp"
             },
-            "links" : []
+            "links" : [
+               {
+                  "blockConstraint" : 113289728,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "noise2d"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "f1"
+                     }
+                  ],
+                  "linkType" : "LT:NOISE_2D",
+                  "name" : "terrain",
+                  "shortPath" : "Lerp 2D.function low",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 0,
+                  "sliderMax" : 0,
+                  "sliderMin" : 0,
+                  "sliderStep" : 0
+               }
+            ]
          },
          "seed" : "I has a seed!",
          "sharedConfig" : {
