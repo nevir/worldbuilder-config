@@ -3,7 +3,7 @@
    "@configType" : "NOISE2D",
    "@name" : "Rivers",
    "@position" : [ 7932, 8160 ],
-   "@scroll" : [ 8317.7177734375, 8448.7705078125, 0.29999995231628418 ],
+   "@scroll" : [ 10313.111328125, 7965.7373046875, 0.024999994784593582 ],
    "@toggle-test" : true,
    "@toggle-world" : false,
    "@unlinked" : [],
@@ -30,21 +30,21 @@
                         "@collapsed" : false,
                         "@name" : "Remap 2D",
                         "@position" : [ 9478, 7698 ],
-                        "clamp" : true,
+                        "clamp" : false,
                         "clampPower" : 10,
                         "frequency" : [ 1, 1 ],
                         "fun" : {
                            "@collapsed" : false,
                            "@name" : "Remap 2D",
                            "@position" : [ 9829, 7698 ],
-                           "clamp" : true,
+                           "clamp" : false,
                            "clampPower" : 10,
                            "frequency" : [ 1, 1 ],
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Remap 2D",
                               "@position" : [ 10180, 7698 ],
-                              "clamp" : true,
+                              "clamp" : false,
                               "clampPower" : 10,
                               "frequency" : [ 1, 1 ],
                               "fun" : {
@@ -141,7 +141,7 @@
                                  },
                                  "type" : "absolute"
                               },
-                              "max" : -2,
+                              "max" : -0.5,
                               "min" : 0,
                               "type" : "remap"
                            },
@@ -464,6 +464,61 @@
             "sliderStep" : 0
          },
          {
+            "blockConstraint" : 1498447472,
+            "blockDefault" : "",
+            "checkDefault" : true,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "noise2d"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "base"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "max"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "edge smoothing",
+            "shortPath" : "Remap 2D.max",
+            "sliderCheck" : false,
+            "sliderDefault" : -0.5,
+            "sliderMax" : 0,
+            "sliderMin" : -2,
+            "sliderStep" : 0.0010000000474974513
+         },
+         {
             "blockConstraint" : 1139785856,
             "blockDefault" : "",
             "checkDefault" : false,
@@ -570,21 +625,21 @@
                               "@collapsed" : false,
                               "@name" : "Remap 2D",
                               "@position" : [ 9478, 7698 ],
-                              "clamp" : true,
+                              "clamp" : false,
                               "clampPower" : 10,
                               "frequency" : [ 1, 1 ],
                               "fun" : {
                                  "@collapsed" : false,
                                  "@name" : "Remap 2D",
                                  "@position" : [ 9829, 7698 ],
-                                 "clamp" : true,
+                                 "clamp" : false,
                                  "clampPower" : 10,
                                  "frequency" : [ 1, 1 ],
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Remap 2D",
                                     "@position" : [ 10180, 7698 ],
-                                    "clamp" : true,
+                                    "clamp" : false,
                                     "clampPower" : 10,
                                     "frequency" : [ 1, 1 ],
                                     "fun" : {
@@ -681,7 +736,7 @@
                                        },
                                        "type" : "absolute"
                                     },
-                                    "max" : -2,
+                                    "max" : -0.5,
                                     "min" : 0,
                                     "type" : "remap"
                                  },
@@ -1004,6 +1059,61 @@
                   "sliderStep" : 0
                },
                {
+                  "blockConstraint" : 1498447472,
+                  "blockDefault" : "",
+                  "checkDefault" : true,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "noise2d"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "base"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "max"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "edge smoothing",
+                  "shortPath" : "Remap 2D.max",
+                  "sliderCheck" : false,
+                  "sliderDefault" : -0.5,
+                  "sliderMax" : 0,
+                  "sliderMin" : -2,
+                  "sliderStep" : 0.0010000000474974513
+               },
+               {
                   "blockConstraint" : 1139785856,
                   "blockDefault" : "",
                   "checkDefault" : false,
@@ -1281,6 +1391,52 @@
                "offset-hash" : "UKk2igW6f8nmHLPp",
                "type" : "simplex"
             }
+         },
+         {
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "noise2d"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "base"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "max"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "sliderValue" : -0.5
          },
          {
             "linkPath" : [
