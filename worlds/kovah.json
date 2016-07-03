@@ -3,9 +3,9 @@
    "@configType" : "WORLD",
    "@name" : "Kovah",
    "@position" : [ 7764, 8160 ],
-   "@scroll" : [ 8425.037109375, 8616.85546875, 1.2750000953674316 ],
+   "@scroll" : [ 8969.615234375, 8380.69921875, 1.2750000953674316 ],
    "@unlinked" : [],
-   "@version" : 6,
+   "@version" : 7,
    "generator" : {
       "@collapsed" : false,
       "@name" : "Generator",
